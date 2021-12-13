@@ -62,6 +62,7 @@ textarea{
     height: 30ch;
     font-size: 1rem;
     font-family: "Poppins";
+    resize: none;
 }
 .submit-button{
     height: 8ch;
