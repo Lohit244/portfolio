@@ -1,0 +1,49 @@
+.skills-container{
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+}
+.skills{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    overflow-x: hidden;
+}
+.skills-grid{
+    transform: translateX(-90%);
+    transition: transform ease-in 200ms;
+    flex: 1;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.skills-text{
+    font-family: "Poppins";
+    font-size: 3rem;
+}
+.skills-img{
+    height: 7rem;
+}
+.skills-wave{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+}
+.skills-grid.up{
+    transform: translateX(0%);
+}
+@media (max-width:1010px){
+    .skills{
+        flex-direction: column;
+    }
+}
+@media(max-width: 768px){
+    .skills-img{
+        height: 4rem;
+    }
+    .skills-grid{
+        column-gap: 2ch;
+    }
+}

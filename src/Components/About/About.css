@@ -1,0 +1,43 @@
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    grid-row-start: 2;
+    grid-column-start: 2;
+    color: white;
+}
+.top-heading{
+    font-size: 1.25rem;
+    font-family: "Poppins";
+    margin-bottom: 2rem;
+}
+.about-text{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    flex: 1;
+    justify-content: center;
+    font-size: 3rem;
+}
+.about-wave use{
+    fill: #eaeaea
+}
+.about-wave{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+}
+@media(max-width: 768px){
+    .about-text{
+        width: 100%;
+        font-size: 1.8rem;
+    }
+    .top-heading{
+        font-size: 1rem;
+    }
+}

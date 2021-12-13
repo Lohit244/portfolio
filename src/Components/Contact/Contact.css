@@ -1,0 +1,79 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 2fr 8fr;
+}
+.contact{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    justify-content: center;
+    align-items: center;    
+}
+.contact-img{
+    height: 2rem;
+}
+.connect-footer{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-bottom: 2%;
+    padding-top: 5%;
+}
+.contact-header{
+    padding-top: 4ch;
+    grid-column-start: 2;
+    color: white;
+    font-size: 4rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+::placeholder {
+    color: #fff;
+    opacity: 1; /* Firefox */
+}
+input{
+    color:white;
+    border: none;
+    border-radius: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #262626;
+    height: 5ch;
+    font-size: 1rem;
+    font-family: "Poppins";
+}
+textarea{
+    border: none;
+    border-radius: 15px;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #262626;
+    color:white;
+    height: 30ch;
+    font-size: 1rem;
+    font-family: "Poppins";
+}
+.submit-button{
+    height: 8ch;
+    align-self: center;
+    background-color: #bbed25;
+    border: none;
+    padding: 1ch 2ch;
+    font-size: 1rem;
+    font-family: "Poppins";
+    border-radius: 4ch;
+    width: max-content;
+}
+.contact-form{
+    width: 100%;
+}

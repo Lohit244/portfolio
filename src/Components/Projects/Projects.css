@@ -1,0 +1,72 @@
+.projects-container{
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    grid-template-rows: 1fr 9fr 1fr;
+}
+.projects{
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+.projects-heading{
+    font-family: "Poppins";
+    font-weight: 400;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+.project-3{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.grid-card{
+    min-height: 25vh;
+    border-radius: 15px;
+    transition: transform ease-in 200ms,
+    opacity ease-in 200ms;
+    transform: scale(0.1);
+    opacity: 0;
+    padding: 2% 2%;
+    display: grid;
+    gap:1%;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+.project-text{
+    color: white;
+    font-family: "Poppins";
+    font-size: 1.25rem;
+}
+.grid-card.fullcard{
+    transform: scale(1);
+    opacity: 1;
+}
+.project-image{
+    width: 100%;
+}
+.projects-wave{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+}
+.projects-wave  use{
+    fill: #bbed25
+}
+.project-github{
+    margin-top: 2ch;
+    height:4ch;
+}
+@media (max-width:1010px){
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .project-2{
+        grid-column-start: 1;
+    }
+    .project-3{
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
