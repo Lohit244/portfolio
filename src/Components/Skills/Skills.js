@@ -27,7 +27,7 @@ function Skills() {
                 entry.target.classList.remove("up")
             }
         },{
-            threshold: 0.1,
+            threshold: 0.08,
         })
         if(gridref.current){
             gridobserver.observe(gridref.current)
