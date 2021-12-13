@@ -38,6 +38,7 @@
 }
 .landing{
     overflow: hidden;
+    border: #4b4b4b dashed;
     display: flex;
     grid-column-start: 2;
     grid-row-start: 2;
