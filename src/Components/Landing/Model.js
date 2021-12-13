@@ -8,9 +8,8 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 export default function Model(props) {
   const group = useRef()
   const { nodes, materials, animations } = useGLTF('/untitled.gltf')
-  // eslint-disable-next-line
+  //eslint-disable-next-line
   const { actions } = useAnimations(animations, group)
-
   return (
     <group ref={group} {...props} dispose={null}>
       <group position={[-38, 0, -36.5]} rotation={[-Math.PI / 2, 0, 0]}>
@@ -266,9 +265,7 @@ export default function Model(props) {
                             </group>
                           </group>
                         </group>
-                        <group
-                          position={[0, -10.2, 0]}
-                          rotation={[-Math.PI, -Math.PI / 4, -Math.PI]}>
+                        <group position={[0, -10.2, 0]} rotation={[Math.PI, -Math.PI / 4, Math.PI]}>
                           <group position={[-11.2, 10.7, 0]} scale={[0.1, 0.1, 0.1]}>
                             <group rotation={[0.2, 0.2, 0.9]} scale={[1.9, 1.9, 1.9]}>
                               <mesh
@@ -294,7 +291,7 @@ export default function Model(props) {
                             </group>
                           </group>
                         </group>
-                        <group position={[0, -10.2, 0]} rotation={[-Math.PI, 0, -Math.PI]}>
+                        <group position={[0, -10.2, 0]} rotation={[Math.PI, 0, Math.PI]}>
                           <group position={[-11.2, 10.7, 0]} scale={[0.1, 0.1, 0.1]}>
                             <group
                               position={[-0.3, 1.1, -0.4]}
@@ -358,7 +355,7 @@ export default function Model(props) {
                             </group>
                           </group>
                         </group>
-                        <group position={[0, -10.2, 0]} rotation={[0, Math.PI / 2, 0]}>
+                        <group position={[0, -10.2, 0]} rotation={[0, 1.6, 0]}>
                           <group position={[-11.2, 10.7, 0]} scale={[0.1, 0.1, 0.1]}>
                             <group rotation={[0.3, -0.7, 1.5]} scale={[2, 2, 2]}>
                               <mesh
@@ -537,7 +534,7 @@ export default function Model(props) {
               receiveShadow
               geometry={nodes.book2_18_Books_1_4_0.geometry}
               material={nodes.book2_18_Books_1_4_0.material}
-              position={[-7.7, -7.4, -22.7]}
+              position={[-7.7, -8.1, -22.7]}
               rotation={[0, -0.3, -0.5]}
             />
           </group>
@@ -737,7 +734,7 @@ export default function Model(props) {
         castShadow
         receiveShadow
         geometry={nodes.Plane.geometry}
-        material={materials.Material}
+        material={materials['Material.001']}
         position={[-6.9, -0.2, 3.4]}
         scale={[77.7, 77.7, 77.7]}
       />
