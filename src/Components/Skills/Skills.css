@@ -41,7 +41,7 @@
 }
 @media(max-width: 768px){
     .skills-img{
-        height: 4rem;
+        height: 3.5rem;
     }
     .skills-grid{
         column-gap: 2ch;

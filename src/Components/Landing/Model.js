@@ -534,7 +534,7 @@ export default function Model(props) {
               receiveShadow
               geometry={nodes.book2_18_Books_1_4_0.geometry}
               material={nodes.book2_18_Books_1_4_0.material}
-              position={[-7.7, -8.1, -22.7]}
+              position={[-7.7, -7.4, -22.7]}
               rotation={[0, -0.3, -0.5]}
             />
           </group>
@@ -553,7 +553,7 @@ export default function Model(props) {
               receiveShadow
               geometry={nodes.book2_x4_Books_1_4_0.geometry}
               material={nodes.book2_x4_Books_1_4_0.material}
-              position={[15.4, -4.9, -17.5]}
+              position={[15.4, -4.5, -17.5]}
             />
           </group>
         </group>
@@ -566,7 +566,7 @@ export default function Model(props) {
               receiveShadow
               geometry={nodes.Mesh_0.geometry}
               material={materials.Material__64}
-              position={[13.2, 0.7, 14.2]}
+              position={[13.2, 0.8, 14.2]}
               rotation={[Math.PI, -0.9, Math.PI]}
             />
           </group>
@@ -648,7 +648,7 @@ export default function Model(props) {
         geometry={nodes.Text.geometry}
         material={materials['steel01.001']}
         position={[-5.4, 28.9, -3.9]}
-        rotation={[1.1, 0.2, -0.4]}
+        rotation={[1.4, 0, -0.4]}
         scale={[17, 17, 17]}
       />
       <mesh
@@ -656,7 +656,7 @@ export default function Model(props) {
         receiveShadow
         geometry={nodes.FlowerPot.geometry}
         material={materials.PotMaterial}
-        position={[-67.3, 10.1, -0.8]}
+        position={[-67.3, 9.9, -0.8]}
         scale={[9, 9, 9]}
       />
       <mesh
@@ -706,11 +706,19 @@ export default function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes['5848152fcef1014c0b5e4967'].geometry}
-        material={materials['5848152fcef1014c0b5e4967']}
-        position={[-2, 35.9, -63.1]}
-        rotation={[1.1, 0, -0.1]}
-        scale={[13, 13, 13]}
+        geometry={nodes.Plane.geometry}
+        material={materials['Material.002']}
+        position={[-6.9, -1.1, 3.4]}
+        scale={[77.7, 77.7, 77.7]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes['1280px-Nodejs_logosvg'].geometry}
+        material={materials['1280px-Node.js_logo.svg']}
+        position={[-21.3, 41.4, -44.3]}
+        rotation={[1.3, 0.2, -0.6]}
+        scale={[18.2, 18.2, 18.2]}
       />
       <mesh
         castShadow
@@ -733,19 +741,11 @@ export default function Model(props) {
       <mesh
         castShadow
         receiveShadow
-        geometry={nodes.Plane.geometry}
-        material={materials['Material.001']}
-        position={[-6.9, -0.2, 3.4]}
-        scale={[77.7, 77.7, 77.7]}
-      />
-      <mesh
-        castShadow
-        receiveShadow
-        geometry={nodes['1280px-Nodejs_logosvg'].geometry}
-        material={materials['1280px-Node.js_logo.svg']}
-        position={[-21.3, 41.4, -44.3]}
-        rotation={[1.3, 0.2, -0.6]}
-        scale={[18.2, 18.2, 18.2]}
+        geometry={nodes['5848152fcef1014c0b5e4967'].geometry}
+        material={materials['5848152fcef1014c0b5e4967']}
+        position={[-2, 35.9, -63.1]}
+        rotation={[1.1, 0, -0.1]}
+        scale={[13, 13, 13]}
       />
       <mesh
         castShadow
@@ -769,4 +769,4 @@ export default function Model(props) {
   )
 }
 
-useGLTF.preload('/untitled.gltf')
+useGLTF.preload('/untitled.glb')
