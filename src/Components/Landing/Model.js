@@ -7,7 +7,7 @@ import { useGLTF, useAnimations } from '@react-three/drei'
 
 export default function Model(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/untitled.gltf')
+  const { nodes, materials, animations } = useGLTF('/untitled.glb')
   //eslint-disable-next-line
   const { actions } = useAnimations(animations, group)
   return (
