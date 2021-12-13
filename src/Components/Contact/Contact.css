@@ -68,7 +68,7 @@ textarea{
     height: 8ch;
     align-self: center;
     background-color: #bbed25;
-    border: none;
+    border: 10px solid black;
     padding: 1ch 2ch;
     font-size: 1rem;
     font-family: "Poppins";

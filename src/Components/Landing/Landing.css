@@ -21,7 +21,6 @@
     display: flex;
     gap: 0.5ch;
     align-items: center;
-    /* justify-content: center; */
     grid-column-start: 2;
     grid-row-start: 3;
 }
@@ -84,6 +83,7 @@
     }
     .main-btn,.main-btn-right{
         font-size: 1.2rem;
+        height: 40%;
     }
     .landing-btn-container{
         justify-content: center;
