@@ -13,7 +13,7 @@
 }
 .skills-grid{
     transform: translateX(-90%);
-    transition: transform ease-in 200ms;
+    transition: transform ease-in 600ms;
     flex: 1;
     display: grid;
     gap: 4rem;
