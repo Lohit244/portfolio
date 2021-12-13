@@ -47,7 +47,7 @@ function Landing() {
 			<OrbitControls autoRotate={true} />
 			</Canvas>
 			</div>
-				<a className="landing-btn-container" href="#about">
+				<a className="landing-btn-container" href="#about-page">
 				<button className="main-btn bg-green">
 					View My Portfolio
 				</button>

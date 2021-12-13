@@ -2,7 +2,7 @@ import "./About.css"
 
 function About() {
     return (
-        <div className="bg-gray fullheight about-container" id="about">
+        <div className="bg-gray fullheight about-container" id="about-page">
             <div className="about">
                 <div className="top-heading">Who am i and what i do</div>
                 <div className="about-text"><b>My name is Lohitaksha Malhotra.</b>I am a second year Mechanical Engineering student at 
