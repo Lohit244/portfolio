@@ -16,7 +16,7 @@
     border-radius: 0 4ch 4ch 0;
 }
 .landing-btn-container{
-    pointer-events: none;
+    cursor: pointer;
     animation: bounce infinite 2s;
     display: flex;
     gap: 0.5ch;
