@@ -35,7 +35,7 @@ function Landing() {
 			<ambientLight intensity={0.15} />
 			<Suspense fallback={<LoadingScreen/>}>
 				<Stage
-				preset={"rembrandt"}
+				preset={"portrait"}
 				intensity={0.5}
 				contactShadow={true}
 				shadows
@@ -47,7 +47,8 @@ function Landing() {
 			<OrbitControls autoRotate={true} />
 			</Canvas>
 			</div>
-				<a className="landing-btn-container" href="#about-page">
+				<div className="landing-btn-container">
+				<a href="#about-page">
 				<button className="main-btn bg-green">
 					View My Portfolio
 				</button>
@@ -55,6 +56,7 @@ function Landing() {
 					→
 				</button>
 				</a>
+				</div>
 			<svg
 				className="wave landing-wave"
 				xmlns="http://www.w3.org/2000/svg"

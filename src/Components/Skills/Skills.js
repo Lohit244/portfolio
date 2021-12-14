@@ -21,10 +21,8 @@ function Skills() {
             if(entry.isIntersecting){
                 setTimeout(()=>{
                     entry.target.classList.add("up");
-                },400)
-            }
-            if(!entry.isIntersecting){
-                entry.target.classList.remove("up")
+                },200)
+                if(gridref.current){gridobserver.unobserve(gridref.current)}
             }
         },{
             // threshold: 0.08,

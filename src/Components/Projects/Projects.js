@@ -15,34 +15,35 @@ function Projects() {
 		const observer = new IntersectionObserver((entries) => {
 			const [entry] = entries;
 			if (entry.isIntersecting) {
+				if (project1ref.current) {
+					observer.unobserve(project1ref.current);
+				}
 				setTimeout(() => {
 					entry.target.classList.add("fullcard");
 				}, 200);
-			}
-			if (!entry.isIntersecting) {
-				entry.target.classList.remove("fullcard");
 			}
 		}, observerOptions);
 		const observer2 = new IntersectionObserver((entries) => {
 			const [entry] = entries;
 			if (entry.isIntersecting) {
+				if (project2ref.current) {
+					observer.unobserve(project2ref.current);
+				}
 				setTimeout(() => {
 					entry.target.classList.add("fullcard");
 				}, 200);
-			}
-			if (!entry.isIntersecting) {
-				entry.target.classList.remove("fullcard");
+			
 			}
 		}, observerOptions);
 		const observer3 = new IntersectionObserver((entries) => {
 			const [entry] = entries;
 			if (entry.isIntersecting) {
+				if (project2ref.current) {
+					observer.unobserve(project2ref.current);
+				}
 				setTimeout(() => {
 					entry.target.classList.add("fullcard");
 				}, 200);
-			}
-			if (!entry.isIntersecting) {
-				entry.target.classList.remove("fullcard");
 			}
 		}, observerOptions);
 		observer.observe(project1ref.current);

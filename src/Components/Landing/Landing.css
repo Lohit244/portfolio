@@ -16,13 +16,19 @@
     border-radius: 0 4ch 4ch 0;
 }
 .landing-btn-container{
-    cursor: pointer;
     animation: bounce infinite 2s;
     display: flex;
-    gap: 0.5ch;
     align-items: center;
     grid-column-start: 2;
     grid-row-start: 3;
+}
+.landing-btn-container>a>button{
+    cursor: pointer;
+}
+.landing-btn-container>a{
+    display: flex;
+    gap: 0.5ch;
+    width: max-content;
 }
 .landing-container{
     display: grid;
