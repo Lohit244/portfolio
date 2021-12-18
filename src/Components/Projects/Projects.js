@@ -1,8 +1,7 @@
 import "./Projects.css";
 import { useRef, useEffect } from "react";
 import githublogo from "../../media/github.svg";
-import project1img from "../../media/project1.png";
-import project2img from "../../media/project2.png";
+
 function Projects() {
 	const project1ref = useRef(null);
 	const project2ref = useRef(null);
@@ -75,9 +74,9 @@ function Projects() {
 					<div
 						className="grid-card project-1 bg-gray"
 						ref={project1ref}>
-							<img
+							<div
 								className="project-image"
-								src={project1img}
+								style = {{backgroundImage: `url(/project1.png)`, backgroundSize: "cover", backgroundPosition: "center"}}
 								alt="project"
 							/>
 						<div className="project-text">
@@ -95,9 +94,9 @@ function Projects() {
 					<div
 						className="grid-card project-2 bg-gray"
 						ref={project2ref}>
-							<img
+							<div
 								className="project-image"
-								src={project2img}
+								style = {{backgroundImage: `url(/project2.png)`, backgroundSize: "cover"}}
 								alt="project"
 							/>
 						<div className="project-text">
