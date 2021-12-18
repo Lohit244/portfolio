@@ -6,7 +6,7 @@ import instagramlogo from "../../media/instagram.svg"
 function Contact() {
 	const formSubmit = (e) => {
 		//post method to be done later
-		e.preverntDefault();
+		e.preventDefault();
 	};
 	return (
 		<div className="bg-black contact-container">
