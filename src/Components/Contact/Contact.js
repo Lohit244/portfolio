@@ -16,6 +16,7 @@ function Contact() {
                     <form onSubmit={formSubmit}>
                         <input placeholder="Your Email"></input>
                         <input placeholder="Your Name"></input>
+                        <input placeholder="Contact Number"></input>
                         <textarea placeholder="Your Message"></textarea>
                         <button className="submit-button" type="submit"> Send Message </button>
                     </form>
