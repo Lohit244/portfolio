@@ -3,11 +3,12 @@ import { useState } from "react";
 import githublogo from "../../media/github.svg";
 import linkedinlogo from "../../media/linkedin.svg";
 import instagramlogo from "../../media/instagram.svg"
-const [email, setEmail] = useState("")
-const [name, setName] = useState("")
-const [contact, setContact] = useState("")
-const [message, setMessage] = useState("")
+
 function Contact() {
+	const [email, setEmail] = useState("")
+	const [name, setName] = useState("")
+	const [contact, setContact] = useState("")
+	const [message, setMessage] = useState("")
 	const formSubmit = (e) => {
 		//post method to be done later
 		console.log({
