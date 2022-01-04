@@ -1,11 +1,21 @@
 import "./Contact.css";
+import { useState } from "react";
 import githublogo from "../../media/github.svg";
 import linkedinlogo from "../../media/linkedin.svg";
 import instagramlogo from "../../media/instagram.svg"
-
+const [email, setEmail] = useState("")
+const [name, setName] = useState("")
+const [contact, setContact] = useState("")
+const [message, setMessage] = useState("")
 function Contact() {
 	const formSubmit = (e) => {
 		//post method to be done later
+		console.log({
+			email: email,
+			name: name,
+			contact: contact,
+			message: message
+		})
 		e.preventDefault();
 	};
 	return (
@@ -14,10 +24,10 @@ function Contact() {
 			<div className="contact">
 				<div className="contact-form">
                     <form onSubmit={formSubmit}>
-                        <input placeholder="Your Email"></input>
-                        <input placeholder="Your Name"></input>
-                        <input placeholder="Contact Number"></input>
-                        <textarea placeholder="Your Message"></textarea>
+                        <input value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder="Your Email"></input>
+                        <input value={name} onChange={(e)=>{setName(e.target.value)}} placeholder="Your Name"></input>
+                        <input value={contact} onChange={(e)=>{setContact(e.target.value)}} placeholder="Contact Number"></input>
+                        <textarea value={message} onChange={(e)=>{setMessage(e.target.value)}} placeholder="Your Message"></textarea>
                         <button className="submit-button" type="submit"> Send Message </button>
                     </form>
                 </div>
