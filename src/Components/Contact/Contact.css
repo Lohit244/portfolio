@@ -74,6 +74,7 @@ textarea{
     font-family: "Poppins";
     border-radius: 4ch;
     width: max-content;
+    cursor: pointer;
 }
 .contact-form{
     width: 100%;

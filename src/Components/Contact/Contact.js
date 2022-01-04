@@ -9,15 +9,26 @@ function Contact() {
 	const [name, setName] = useState("")
 	const [contact, setContact] = useState("")
 	const [message, setMessage] = useState("")
-	const formSubmit = (e) => {
-		//post method to be done later
-		console.log({
-			email: email,
-			name: name,
-			contact: contact,
-			message: message
-		})
+	const formSubmit = async(e) => {
 		e.preventDefault();
+		try{
+			const res = await fetch("https://portfoliobackendlohit2022.herokuapp.com/send",{
+				method: "POST",
+				body:JSON.stringify({
+				email: email,
+				name: name,
+				contact: contact,
+				message: message}),
+				headers:{
+					"content-type": "application/json"
+				}
+			})
+			const resjson = await res.json()
+			alert(resjson.message)
+			console.log(resjson)
+		}catch(err){
+			alert("oops something went wrong... Consider reaching out via my other sources")
+		}
 	};
 	return (
 		<div className="bg-black contact-container">
