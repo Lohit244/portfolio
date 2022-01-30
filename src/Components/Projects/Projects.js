@@ -1,6 +1,7 @@
 import "./Projects.css";
 import { useRef, useEffect } from "react";
 import githublogo from "../../media/github.svg";
+import linklogo from "../../media/link.svg";
 
 function Projects() {
 	const project1ref = useRef(null);
@@ -114,8 +115,26 @@ function Projects() {
 					<div
 						className="grid-card project-3 bg-gray"
 						ref={project3ref}>
+							<div className="project-image"
+							style = {{backgroundImage: `url(/project3.png)`}}
+							/>
 						<div className="project-text">
-							Upcoming project for IEEE Megaproject 🤫
+                            A project to connect developers and college students with similar intersts and a VSCode extension for the same
+							<br />
+						<a href="https://github.com/Lohit244/VSBuddies-website">
+							<img
+								className="project-github"
+								src={githublogo}
+								alt="github"
+								/>
+								</a>
+						<a href="https://vsbuddies.netlify.app">
+							<img
+								className="project-link"
+								src={linklogo}
+								alt="github"
+								/>
+								</a>
 						</div>
 					</div>
 				</div>

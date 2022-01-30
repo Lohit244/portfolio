@@ -10,7 +10,7 @@ function LoadingScreen() {
 	const {progress} = useProgress()
 	return(
 		<Html center color="white">
-			Loading ...<br /> {Math.floor(progress)}% done
+			This is gonna be really cool, trust me<br /> Loading {Math.floor(progress)}% done
 		</Html>
 	)
 }
