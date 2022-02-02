@@ -45,7 +45,7 @@ function Landing() {
 				</Stage>
 			</Suspense>
 			<OrbitControls autoRotate={true} />
-			</Canvas>
+			</Canvas> 
 			</div>
 				<div className="landing-btn-container">
 				<a href="#about-page">

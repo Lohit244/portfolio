@@ -2,6 +2,7 @@ import "./Projects.css";
 import { useRef, useEffect } from "react";
 import githublogo from "../../media/github.svg";
 import linklogo from "../../media/link.svg";
+import data from "../../data"
 
 function Projects() {
 	const project1ref = useRef(null);
@@ -77,19 +78,26 @@ function Projects() {
 						ref={project1ref}>
 							<div
 								className="project-image"
-								style = {{backgroundImage: `url(/project1.png)`, backgroundSize: "cover", backgroundPosition: "center"}}
+								style = {{backgroundImage: `url(/project1.png)`}}
 								alt="project"
 							/>
 						<div className="project-text">
-							My previous personal website built using react
+							{data.projects[0].about}
 							<br />
-							<a href="https://github.com/Lohit244/4/tree/master">
+							<a href={data.projects[0].github}>
 								<img
 									className="project-github"
 									src={githublogo}
-									alt="project"
+									alt="github"
 								/>
 							</a>
+							<a href= {data.projects[0].link}>
+							<img
+								className="project-link"
+								src={linklogo}
+								alt="link"
+								/>
+								</a>
 						</div>
 					</div>
 					<div
@@ -97,13 +105,13 @@ function Projects() {
 						ref={project2ref}>
 							<div
 								className="project-image"
-								style = {{backgroundImage: `url(/project2.png)`, backgroundSize: "cover"}}
+								style = {{backgroundImage: `url(/project2.png)`}}
 								alt="project"
 							/>
 						<div className="project-text">
-							A webscraper for google searches and job finding on likedin and other websites, built using python
+							{data.projects[1].about}
 							<br />
-						<a href="https://github.com/Lohit244/IEEE-Webscraper">
+						<a href={data.projects[1].github}>
 							<img
 								className="project-github"
 								src={githublogo}
@@ -119,20 +127,20 @@ function Projects() {
 							style = {{backgroundImage: `url(/project3.png)`}}
 							/>
 						<div className="project-text">
-                            A project to connect developers and college students with similar intersts and a VSCode extension for the same
+							{data.projects[2].about}
 							<br />
-						<a href="https://github.com/Lohit244/VSBuddies-website">
+						<a href={data.projects[2].github}>
 							<img
 								className="project-github"
 								src={githublogo}
 								alt="github"
 								/>
 								</a>
-						<a href="https://vsbuddies.netlify.app">
+						<a href={data.projects[2].link}>
 							<img
 								className="project-link"
 								src={linklogo}
-								alt="github"
+								alt="link"
 								/>
 								</a>
 						</div>

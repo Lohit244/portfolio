@@ -3,6 +3,7 @@ import { useState } from "react";
 import githublogo from "../../media/github.svg";
 import linkedinlogo from "../../media/linkedin.svg";
 import instagramlogo from "../../media/instagram.svg"
+import data from "../../data"
 
 function Contact() {
 	const [email, setEmail] = useState("")
@@ -45,23 +46,23 @@ function Contact() {
                 </div>
 				<div className="connect-footer">
 				Connect with me:
-					<a href="https://www.github.com/lohit244">
+					<a href={data.links.github}>
 					<img
 						className="contact-img"
 						src={githublogo}
-						alt="Lohitaksha Malhotra"></img>
+						alt={data.name}></img>
 					</a>
-					<a href="https://www.linkedin.com/in/lohitaksha-malhotra-b84392201/">
+					<a href={data.links.linkedIn}>
 					<img
 						className="contact-img"
 						src={linkedinlogo}
-						alt="Lohitaksha Malhotra"></img>
+						alt={data.name}></img>
 					</a>
-					<a href="https://www.instagram.com/lohitakshamalhotra/">
+					<a href={data.links.insta}>
 					<img
 						className="contact-img"
 						src={instagramlogo}
-						alt="Lohitaksha Malhotra"></img>
+						alt={data.name}></img>
 					</a>
 				</div>
 			</div>
