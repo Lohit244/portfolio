@@ -91,6 +91,7 @@ function Projects() {
 									alt="github"
 								/>
 							</a>
+							{(data.projects[0].link!=="NULL")&&
 							<a href= {data.projects[0].link}>
 							<img
 								className="project-link"
@@ -98,6 +99,7 @@ function Projects() {
 								alt="link"
 								/>
 								</a>
+								}
 						</div>
 					</div>
 					<div
@@ -111,13 +113,22 @@ function Projects() {
 						<div className="project-text">
 							{data.projects[1].about}
 							<br />
-						<a href={data.projects[1].github}>
+							<a href={data.projects[1].github}>
 							<img
 								className="project-github"
 								src={githublogo}
 								alt="github"
 								/>
 								</a>
+							{(data.projects[1].link!=="NULL")&&
+							<a href={data.projects[1].link}>
+							<img
+								className="project-link"
+								src={linklogo}
+								alt="link"
+								/>
+								</a>
+								}
 						</div>
 					</div>
 					<div
@@ -136,13 +147,14 @@ function Projects() {
 								alt="github"
 								/>
 								</a>
+						{(data.projects[2].link!=="NULL")&&
 						<a href={data.projects[2].link}>
 							<img
 								className="project-link"
 								src={linklogo}
 								alt="link"
 								/>
-								</a>
+								</a>}
 						</div>
 					</div>
 				</div>

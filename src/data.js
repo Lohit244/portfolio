@@ -6,6 +6,7 @@ const Bio = "I am a second year Mechanical Engineering student at BIT Mesra. I a
 /*
     **** Projects ****
   the photos are in public folder as project1.png ... project3.png
+  about and github are reqd. link is optional (Put NULL all caps as a string to exclude link)
 */
 const Project1 ={
   about: "My previous personal website built using react",
@@ -14,7 +15,8 @@ const Project1 ={
 }
 const Project2 ={
   about: "A webscraper for google searches and job finding on likedin and other websites, built using python",
-  github: "https://github.com/Lohit244/IEEE-Webscraper"
+  github: "https://github.com/Lohit244/IEEE-Webscraper",
+  link: "NULL",
 }
 //  *** This is the flagship project *** 
 const Project3 ={
