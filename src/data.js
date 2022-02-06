@@ -16,7 +16,7 @@ const Project1 ={
 const Project2 ={
   about:"A Covid Stats tracker built using Public APIs and Bootstrap",
   github: "https://github.com/Lohit244/IEEE-Covid-Project",
-  link: "https://lohit244.github.io/IEEE-Covid-Project",
+  link: "https://lohit244.github.io/IEEE-Covid-project",
 }
 //  *** This is the flagship project *** 
 const Project3 ={
