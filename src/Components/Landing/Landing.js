@@ -48,9 +48,9 @@ function Landing() {
 			</Canvas> 
 			</div>
 				<div className="landing-btn-container">
-				<a href="#about-page">
+				<a href="Resume.pdf">
 				<button className="main-btn bg-green">
-					View My Portfolio
+					View My Resume
 				</button>
 				<button className="main-btn-right bg-green">
 					→
