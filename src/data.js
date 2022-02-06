@@ -14,9 +14,9 @@ const Project1 ={
   link: "https://lohit244.github.io/4"
 }
 const Project2 ={
-  about: "A webscraper for google searches and job finding on likedin and other websites, built using python",
-  github: "https://github.com/Lohit244/IEEE-Webscraper",
-  link: "NULL",
+  about:"A Covid Stats tracker built using Public APIs and Bootstrap",
+  github: "https://github.com/Lohit244/IEEE-Covid-Project",
+  link: "https://lohit244.github.io/IEEE-Covid-Project",
 }
 //  *** This is the flagship project *** 
 const Project3 ={
